@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Examen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osaiz21/cheil-colombia.git"
+  },
+  "author": "saizandres21@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osaiz21/cheil-colombia/issues"
+  },
+  "homepage": "https://github.com/osaiz21/cheil-colombia#readme"
+}
