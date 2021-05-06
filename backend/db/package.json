@@ -1,0 +1,21 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "modelo de base de datos hoteles/chail",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osaiz21/cheil-colombia.git"
+  },
+  "author": "saizandres21@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^9.0.0",
+    "mariadb": "^2.5.3",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
+}
