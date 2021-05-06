@@ -1,19 +1,29 @@
 {
   "name": "frontend",
-  "version": "1.0.0",
-  "description": "Examen",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/osaiz21/cheil-colombia.git"
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.2.4",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
   },
-  "author": "saizandres21@gmail.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/osaiz21/cheil-colombia/issues"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
   },
-  "homepage": "https://github.com/osaiz21/cheil-colombia#readme"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
