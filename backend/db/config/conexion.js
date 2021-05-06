@@ -15,7 +15,7 @@ const creardefiniciones = async ( deficiones ) => {
     try {
         await conectar()
         //console.error(deficiones)
-        await deficiones.sync({force: false})
+        await deficiones.sync({force: true})
         //await deficiones.create({})
     }catch(error){
         console.error(error.message)
