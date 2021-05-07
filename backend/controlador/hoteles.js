@@ -24,12 +24,35 @@ const crearHoteles = async (req,res) => {
         })
     }
 }
-const actualizarHoteles = (req,res) => {
-    debug('hola')
-    res.send({'hola':'111'})
+const actualizarHoteles = async (req,res) => {
+    try {
+        await hoteles.update(req.body,{
+            where: {
+                id: req.params.id
+            }
+        })
+        res.send(req.body)
+    } catch( error ) {
+        res.send({
+            'error': error.message
+        })
+    }
 }
-const eliminarHoteles = (req,res) => {
-    res.send({'hola':'111'})
+const eliminarHoteles = async (req,res) => {
+    try {
+        await hoteles.destroy({
+            where: {
+                id: req.params.id
+            }
+        })
+        res.send({
+            'message': 'Eliminacion Exitosa'
+        })
+    } catch( error ) {
+        res.send({
+            'error': error.message
+        })
+    }
 }
 
 module.exports = {

@@ -18,8 +18,8 @@ const {
 
 app.get('/listar', listarHoteles )
 app.post('/crear', crearHoteles )
-app.put('/actualizar', actualizarHoteles )
-app.delete('/delete', eliminarHoteles )
+app.put('/hotel/:id', actualizarHoteles )
+app.delete('/hotel/:id', eliminarHoteles )
 
  
 app.listen(port, () => {
