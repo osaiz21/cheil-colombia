@@ -20,10 +20,18 @@ export default new Vuex.Store({
         // Asignamos valores.
         const { data } = await axios.get('listar')
         if (!Object.keys(data).length) {
-          throw new Error('sin archivos')
+          throw new Error('sin Hoteles')
         }
-        console.error(data.data)
         commit('setHoteles', data.data )
+      } catch (error) {
+        throw new Error(error.message || 'Error Inesperado.')
+      }
+    },
+    async eliminarHoteles ({ commit }, id = '') {
+      try {
+        // Eliminar Valores.
+        const { data } = await axios.delete(`hotel/${id}`)
+       
       } catch (error) {
         throw new Error(error.message || 'Error Inesperado.')
       }
